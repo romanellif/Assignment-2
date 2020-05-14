@@ -73,7 +73,7 @@ public class Assignment2 {
 				if (option3 == 3) {
 					double newCredit = credit + withdrawAmount;
 					System.out.println("The amount withdrew is " + withdrawAmount);
-					System.out.println("Your current Credit balance is equal to" + newCredit);
+					System.out.println("Your current Credit balance is equal to " + newCredit);
 				}
 			}
 
@@ -97,11 +97,15 @@ public class Assignment2 {
 		            if (option5 == 2) {
 						double newChequing = chequing - transfer;
 						double newSavings = savings + transfer;
+						System.out.println("Your new chequing balance is equal to " + newChequing);
+						System.out.println("Your new savings balance is equal to " + newSavings);
 		            }
 		            
 		            else if (option5 == 3) {
 						double newChequing = chequing - transfer;
 						double newCredit = credit - transfer;
+						System.out.println("Your new chequing balance is equal to " + newChequing);
+						System.out.println("Your new credit balance is equal to " + newCredit);
 		            }
 		        }
 						
@@ -117,12 +121,16 @@ public class Assignment2 {
 		            if (option5 == 1) {
 						double newSavings = savings - transfer;
 						double newChequing = chequing + transfer;
+						System.out.println("Your new savings balance is equal to " + newSavings);
+						System.out.println("Your new chequing balance is equal to " + newChequing);
 		            }
 		            
 		            else if (option5 == 3) {
 						double newSavings = savings - transfer;
 						double newCredit = credit - transfer;
-		                    }
+						System.out.println("Your new savings balance is equal to " + newSavings);
+						System.out.println("Your new credit balance is equal to " + newCredit);
+		            }
 				}
 
 				if (option4 == 3) {
@@ -137,11 +145,15 @@ public class Assignment2 {
 		        if (option == 1) {
 					double newCredit = credit + transfer;
 		            double newChequing = chequing + transfer;
+		            System.out.println("Your new credit balance is equal to " + newCredit);
+					System.out.println("Your new chequing balance is equal to " + newChequing);
 		        }
 
 		        if (option == 2) {
 					double newCredit = credit + transfer;
 					double newSavings = savings + transfer;
+					System.out.println("Your new credit balance is equal to " + newCredit);
+					System.out.println("Your new savings balance is equal to " + newSavings);
                     }
                 }
             }
