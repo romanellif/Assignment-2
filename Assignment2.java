@@ -159,10 +159,10 @@ public class Assignment2 {
             }
             /* Option 4 will print out your balance*/
             else if (option == 4) {
-            	System.out.println("This is your new balance after the changes you have made today:");
-            	System.out.println("Chequing = " + newChequing + "$");
-            	System.out.println("Savings = " + newSavings + "$");
-            	System.out.println("Credit = " + newCredit + "$");
+            	System.out.println("This is your balance");
+            	System.out.println("Chequing = " + chequing + "$");
+            	System.out.println("Savings = " + savings + "$");
+            	System.out.println("Credit = " + credit + "$");
             }
 			/*Option 5 will let you make a payment to your credit card*/
             else if (option == 5) {
@@ -178,6 +178,8 @@ public class Assignment2 {
             		double newChequing = chequing - payment;
             		double newCredit = credit - payment;
             		System.out.println("Payment has been made. Thank you :)");
+            		System.out.println("Your new chequing balance is equal to: " + newChequing);
+            		System.out.pritnln("Your new credit balance is equal to: " + newCredit);
             	}
             	
             	if (option6 == 2) {
@@ -186,6 +188,8 @@ public class Assignment2 {
             		double newSavings = savings - payment;
             		double newCredit = credit - payment;
             		System.out.println("Payment has been made. Thank you :)");
+            		System.out.println("Your new savings balance is equal to: " + newSavings);
+            		System.out.pritnln("Your new credit balance is equal to: " + newCredit);
             	}
             }
     }
