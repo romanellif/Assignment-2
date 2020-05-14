@@ -161,7 +161,27 @@ public class Assignment2 {
             	System.out.println("Credit = " + newCredit + "$");
             }
 
-            
+            else if (option == 5) {
+            	System.out.println("Would you like to make a payment to your credit card from your chequing "
+            		               +  "or your savings account?");
+            	System.out.println("1. Chequing");
+            	System.out.println("2. Savings");
+            	int option6 = input.nextInt();
+            	if (option6 == 1) {
+            		System.out.println("How much would you like to pay off?");
+            		double payment = input.nextDouble();
+            		double newChequing = chequing - payment;
+            		double newCredit = credit - payment;
+            		System.out.println("Payment has been made. Thank you :)");
+            	}
+            	if (option6 == 2) {
+            		System.out.println("How much would you like to pay off?");
+            		double payment = input.nextDouble();
+            		double newSavings = savings - payment;
+            		double newCredit = credit - payment;
+            		System.out.println("Payment has been made. Thank you :)");
+            	}
+            }
     }
 }
 			
