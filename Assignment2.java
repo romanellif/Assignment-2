@@ -31,15 +31,18 @@ public class Assignment2 {
 				System.out.println("1. Chequing");
 				System.out.println("2. Savings");
 				int option2 = input.nextInt();
+				
 				if (option2 == 1) {
 					double newChequing = chequing + deposit;
 					System.out.println("Your new chequing balance is equal to " + newChequing);
 				}
+				
 				if (option2 == 2)	{
 					double newSavings = savings + deposit;
 					System.out.println("Your new savings balance is equal to " + newSavings);
 				}
 			}
+			
 			else if (option == 2) {
 				System.out.println("How much would you like to withdraw?");
 				double withdrawAmount = input.nextDouble();
@@ -48,18 +51,109 @@ public class Assignment2 {
 				System.out.println("2. Savings");
 				System.out.println("2. Credit");
 				int option3 = input.nextInt();
+				
 				if (option3 == 1) {
 					double newChequing = chequing - withdrawAmount;
 				}
+				
 				if (option3 == 2) {
 					double newSavings = savings - withdrawAmount;
 				}
+				
 				if (option3 == 3) {
 					double newCredit = credit + withdrawAmount;
 				}
 			}
-			}
+			
+			else if (option == 2) {
+				System.out.println("How much would you like to withdraw?");
+				double withdrawAmount = input.nextDouble();
+				System.out.println("Which account would you like to withdraw from?");
+				System.out.println("1. Chequing");
+				System.out.println("2. Savings");
+				System.out.println("2. Credit");
+				int option3 = input.nextInt();
+				
+                if (option3 == 1) {
+                    double newChequing = chequing - withdrawAmount;
+				}
+				
+                if (option3 == 2) {
+                    double newSavings = savings - withdrawAmount;
+				}
+				
+                if (option3 == 3) {
+                    double newCredit = credit + withdrawAmount;
+				}
+            }
+                       
+            else if (option == 3) {
+				System.out.println("Choose which accounts you would like to transfer funds from:");
+				System.out.println("1. Chequing");
+				System.out.println("2. Savings");
+				System.out.println("3. Credit");
+				int option4 = input.nextInt();
+						
+				if (option4 == 1) {
+		            System.out.println("How much would you like to transfer?");
+		            double transfer = input.nextDouble();
+		            System.out.println("Which account would you like to deposit the funds in?");
+		            System.out.println("1. Chequing");
+		            System.out.println("2. Savings");
+		            System.out.println("3. Credit");
+		            int option5 = input.nextInt();
+							
+		            if (option5 == 2) {
+						double newChequing = chequing - transfer;
+						double newSavings = savings + transfer;
+		            }
+		            else if (option5 == 3) {
+						double newChequing = chequing - transfer;
+						double newCredit = credit - transfer;
+		            }
+		        }
+						
+				if (option4 == 2) {
+		            System.out.println("How much would you like to transfer?");
+		            double transfer = input.nextDouble();
+		            System.out.println("Which account would you like to deposit the funds in?");
+		            System.out.println("1. Chequing");
+		            System.out.println("2. Savings");
+		            System.out.println("3. Credit");
+		            int option5 = input.nextInt();
+							
+		            if (option5 == 1) {
+						double newSavings = savings - transfer;
+						double newChequing = chequing + transfer;
+		            }
+		            
+		            else if (option5 == 3) {
+						double newSavings = savings - transfer;
+						double newCredit = credit - transfer;
+		                    }
+				}
 
+				if (option4 == 3) {
+		            System.out.println("How much would you like to transfer?");
+		            double transfer = input.nextDouble();
+		            System.out.println("Which account would you like to deposit the funds in?");
+		            System.out.println("1. Chequing");
+		            System.out.println("2. Savings");
+		            System.out.println("3. Credit");
+		            int option5 = input.nextInt();
 
-	}
+		        if (option == 1) {
+					double newCredit = credit + transfer;
+		            double newChequing = chequing + transfer;
+		        }
+
+		        if (option == 2) {
+					double newCredit = credit + transfer;
+					double newSavings = savings + transfer;
+                    }
+                }
+            }
+                                
+    }
 }
+			
