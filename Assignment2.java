@@ -24,9 +24,9 @@ public class Assignment2 {
 		int option = input.nextInt();
 
 		/*Here I placed some variables of the different accounts on the ATM machine*/
-		double chequing = 500;
-		double savings = 1000;
-		double credit = 300;
+		double chequing = 5000;
+		double savings = 10000;
+		double credit = 2000;
 
 			/*Option 1 will deal with deposits, whether you want to deposit in your savings or chequing account.*/
 			if (option == 1) {
@@ -50,30 +50,277 @@ public class Assignment2 {
 			/*Option 2 will deal with the withdraw option, as well as where my challenge is being placed. 
 			Where the ATM will need to dispense the amount requested in the least amount of bills*/
 			else if (option == 2) {
-				System.out.println("How much would you like to withdraw?");
+				System.out.println("How much would you like to withdraw? (Maximum 200$ CAD & only multiples of 10");
 				double withdrawAmount = input.nextDouble();
 				System.out.println("Which account would you like to withdraw from?");
 				System.out.println("1. Chequing");
 				System.out.println("2. Savings");
-				System.out.println("2. Credit");
+				System.out.println("3. Credit");
 				int option3 = input.nextInt();
 				
 				if (option3 == 1) {
 					double newChequing = chequing - withdrawAmount;
 					System.out.println("The amount withdrew is " + withdrawAmount);
-					System.out.println("Your current Chequing balance is equal to" + newChequing);
-				}
+					System.out.println("Your current Chequing balance is equal to " + newChequing);
+                    while (repeat) {
+                    if (withdrawAmount == 10) {
+                    	System.out.println("1 10$ bill has been dispensed");
+                    							repeat = false;
+                    					}
+                    if (withdrawAmount == 20) {
+						System.out.println("1 20$ bill has been dispensed");
+                                                repeat = false;
+                                        }
+					if (withdrawAmount == 30)   {
+						System.out.println("1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 40) {
+						System.out.println("2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 50) {
+						System.out.println("1 50$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 60) {
+						System.out.println("1 50$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 70) {
+						System.out.println("1 50$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 80) {
+						System.out.println("1 50$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 90) {
+						System.out.println("1 50$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 100) {
+						System.out.println("1 100$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 110) {
+						System.out.println("1 100$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 120) {
+						System.out.println("1 100$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 130) {
+						System.out.println("1 100$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 140) {
+						System.out.println("1 100$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 150) {
+						System.out.println("1 100$ and 1 50$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 160) {
+						System.out.println("1 100$, 1 50$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 170) {
+						System.out.println("1 100$, 1 50$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 180) {
+						System.out.println("1 100$, 1 50$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 190) {
+						System.out.println("1 100$, 1 50$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 200){
+						System.out.println("1 200$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+                                    }
+                                                
+                                }
 				
 				if (option3 == 2) {
 					double newSavings = savings - withdrawAmount;
 					System.out.println("The amount withdrew is " + withdrawAmount);
 					System.out.println("Your current Savings balance is equal to" + newSavings);
+                    while (repeat) {
+                    if (withdrawAmount == 10) {
+                        System.out.println("1 10$ bill has been dispensed");
+                                            	repeat = false;
+                        				}
+                    if (withdrawAmount == 20) {
+						System.out.println("1 20$ bill has been dispensed");
+                                                repeat = false;
+                                        }
+					if (withdrawAmount == 30)   {
+						System.out.println("1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 40) {
+						System.out.println("2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 50) {
+						System.out.println("1 50$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 60) {
+						System.out.println("1 50$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 70) {
+						System.out.println("1 50$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 80) {
+						System.out.println("1 50$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 90) {
+						System.out.println("1 50$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 100) {
+						System.out.println("1 100$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 110) {
+						System.out.println("1 100$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 120) {
+						System.out.println("1 100$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 130) {
+						System.out.println("1 100$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 140) {
+						System.out.println("1 100$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 150) {
+						System.out.println("1 100$ and 1 50$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 160) {
+						System.out.println("1 100$, 1 50$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 170) {
+						System.out.println("1 100$, 1 50$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 180) {
+						System.out.println("1 100$, 1 50$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 190) {
+						System.out.println("1 100$, 1 50$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 200){
+						System.out.println("1 200$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+                                    }
 				}
 				
 				if (option3 == 3) {
 					double newCredit = credit + withdrawAmount;
 					System.out.println("The amount withdrew is " + withdrawAmount);
 					System.out.println("Your current Credit balance is equal to " + newCredit);
+                    while (repeat) {
+                    if (withdrawAmount == 10) {
+                        System.out.println("1 10$ bill has been dispensed");
+                                            repeat = false;
+                                        }
+                   	if (withdrawAmount == 20) {
+						System.out.println("1 20$ bill has been dispensed");
+                                                repeat = false;
+                                        }
+					if (withdrawAmount == 30)   {
+						System.out.println("1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 40) {
+						System.out.println("2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 50) {
+						System.out.println("1 50$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 60) {
+						System.out.println("1 50$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 70) {
+						System.out.println("1 50$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 80) {
+						System.out.println("1 50$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 90) {
+						System.out.println("1 50$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 100) {
+						System.out.println("1 100$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 110) {
+						System.out.println("1 100$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 120) {
+						System.out.println("1 100$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 130) {
+						System.out.println("1 100$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 140) {
+						System.out.println("1 100$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 150) {
+						System.out.println("1 100$ and 1 50$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 160) {
+						System.out.println("1 100$, 1 50$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 170) {
+						System.out.println("1 100$, 1 50$ and 1 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 180) {
+						System.out.println("1 100$, 1 50$, 1 20$ and 1 10$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 190) {
+						System.out.println("1 100$, 1 50$ and 2 20$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+					if (withdrawAmount == 200){
+						System.out.println("1 200$ bill has been dispensed");
+                                                 repeat = false;
+                                        }
+                                    }
 				}
 			}
 
@@ -179,7 +426,7 @@ public class Assignment2 {
             		double newCredit = credit - payment;
             		System.out.println("Payment has been made. Thank you :)");
             		System.out.println("Your new chequing balance is equal to: " + newChequing);
-            		System.out.pritnln("Your new credit balance is equal to: " + newCredit);
+            		System.out.println("Your new credit balance is equal to: " + newCredit);
             	}
             	
             	if (option6 == 2) {
@@ -189,9 +436,8 @@ public class Assignment2 {
             		double newCredit = credit - payment;
             		System.out.println("Payment has been made. Thank you :)");
             		System.out.println("Your new savings balance is equal to: " + newSavings);
-            		System.out.pritnln("Your new credit balance is equal to: " + newCredit);
+            		System.out.println("Your new credit balance is equal to: " + newCredit);
             	}
             }
     }
-}
-			
+}			
