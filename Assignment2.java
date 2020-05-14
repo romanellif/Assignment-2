@@ -1,10 +1,12 @@
 package Assignment2;
 
-/**
- *
- * @author Filippo
- */
 import java.util.Scanner;
+/**
+ *<p> This program will be able to work as an <bold>ATM<bold> Machine.
+ *
+ * @author Filippo Romanelli
+ */
+
 
 public class Assignment2 {
 
@@ -12,6 +14,7 @@ public class Assignment2 {
 
 		Scanner input = new Scanner (System.in);
         
+        /*Here I am listing the different tasks the ATM machine is able to operate */ 
 		System.out.println("Choose one of the following options:");
 		System.out.println("1. Make a deposit");
 		System.out.println("2. Withdraw");
@@ -20,10 +23,12 @@ public class Assignment2 {
 		System.out.println("5. Make a payment");
 		int option = input.nextInt();
 
+		/*Here I placed some variables of the different accounts on the ATM machine*/
 		double chequing = 500;
 		double savings = 1000;
 		double credit = 300;
 
+			/*Option 1 will deal with deposits, whether you want to deposit in your savings or chequing account.*/
 			if (option == 1) {
 				System.out.println("What is the amount you would like to deposit?");
 				double deposit = input.nextDouble();
@@ -42,7 +47,8 @@ public class Assignment2 {
 					System.out.println("Your new savings balance is equal to " + newSavings);
 				}
 			}
-			
+			/*Option 2 will deal with the withdraw option, as well as where my challenge is being placed. 
+			Where the ATM will need to dispense the amount requested in the least amount of bills*/
 			else if (option == 2) {
 				System.out.println("How much would you like to withdraw?");
 				double withdrawAmount = input.nextDouble();
@@ -64,29 +70,8 @@ public class Assignment2 {
 					double newCredit = credit + withdrawAmount;
 				}
 			}
-			
-			else if (option == 2) {
-				System.out.println("How much would you like to withdraw?");
-				double withdrawAmount = input.nextDouble();
-				System.out.println("Which account would you like to withdraw from?");
-				System.out.println("1. Chequing");
-				System.out.println("2. Savings");
-				System.out.println("2. Credit");
-				int option3 = input.nextInt();
-				
-                if (option3 == 1) {
-                    double newChequing = chequing - withdrawAmount;
-				}
-				
-                if (option3 == 2) {
-                    double newSavings = savings - withdrawAmount;
-				}
-				
-                if (option3 == 3) {
-                    double newCredit = credit + withdrawAmount;
-				}
-            }
-                       
+
+            /* Option 3 deals with the transfer of funds from one account to the other (you can choose which) */          
             else if (option == 3) {
 				System.out.println("Choose which accounts you would like to transfer funds from:");
 				System.out.println("1. Chequing");
@@ -107,6 +92,7 @@ public class Assignment2 {
 						double newChequing = chequing - transfer;
 						double newSavings = savings + transfer;
 		            }
+		            
 		            else if (option5 == 3) {
 						double newChequing = chequing - transfer;
 						double newCredit = credit - transfer;
@@ -153,20 +139,21 @@ public class Assignment2 {
                     }
                 }
             }
-
+            /* Option 4 will print out your balance*/
             else if (option == 4) {
             	System.out.println("This is your new balance after the changes you have made today:");
             	System.out.println("Chequing = " + newChequing + "$");
             	System.out.println("Savings = " + newSavings + "$");
             	System.out.println("Credit = " + newCredit + "$");
             }
-
+			/*Option 5 will let you make a payment to your credit card*/
             else if (option == 5) {
             	System.out.println("Would you like to make a payment to your credit card from your chequing "
             		               +  "or your savings account?");
             	System.out.println("1. Chequing");
             	System.out.println("2. Savings");
             	int option6 = input.nextInt();
+            	
             	if (option6 == 1) {
             		System.out.println("How much would you like to pay off?");
             		double payment = input.nextDouble();
@@ -174,6 +161,7 @@ public class Assignment2 {
             		double newCredit = credit - payment;
             		System.out.println("Payment has been made. Thank you :)");
             	}
+            	
             	if (option6 == 2) {
             		System.out.println("How much would you like to pay off?");
             		double payment = input.nextDouble();
