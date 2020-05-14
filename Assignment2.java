@@ -153,7 +153,15 @@ public class Assignment2 {
                     }
                 }
             }
-                                
+
+            else if (option == 4) {
+            	System.out.println("This is your new balance after the changes you have made today:");
+            	System.out.println("Chequing = " + newChequing + "$");
+            	System.out.println("Savings = " + newSavings + "$");
+            	System.out.println("Credit = " + newCredit + "$");
+            }
+
+            
     }
 }
 			
