@@ -60,14 +60,20 @@ public class Assignment2 {
 				
 				if (option3 == 1) {
 					double newChequing = chequing - withdrawAmount;
+					System.out.println("The amount withdrew is " + withdrawAmount);
+					System.out.println("Your current Chequing balance is equal to" + newChequing);
 				}
 				
 				if (option3 == 2) {
 					double newSavings = savings - withdrawAmount;
+					System.out.println("The amount withdrew is " + withdrawAmount);
+					System.out.println("Your current Savings balance is equal to" + newSavings);
 				}
 				
 				if (option3 == 3) {
 					double newCredit = credit + withdrawAmount;
+					System.out.println("The amount withdrew is " + withdrawAmount);
+					System.out.println("Your current Credit balance is equal to" + newCredit);
 				}
 			}
 
